@@ -1,4 +1,4 @@
-# CIS-Compliance-Auditor
+# cis-compliance-auditor
 A Linux CIS benchmark auditing tool written in Bash
 
 ##  Current Features
