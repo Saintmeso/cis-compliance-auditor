@@ -27,3 +27,20 @@ README.md
 ```bash
 ./cisaudit.sh
 
+## Future additions
+-Password Policy auditing
+-Auditd Validation
+-JSON reporting
+-Compliance reporting
+-HTML Reports
+
+##  Futre additions to SSH Security
+-Password auth disabled
+-Max Auth attempts
+-Idle timeout
+-Protocol version
+
+##Futre aditions to Firewall Checks
+-Default deny incoming
+-only necessary ports open
+-SSH allowed explicitly
