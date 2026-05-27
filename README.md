@@ -6,18 +6,23 @@ A Linux CIS benchmark auditing tool written in Bash
 - PASS/FAIL compliance reporting
 - Modular Security check architecture
 - Firewall status auditing
+- SSH Password Authentication Auditing
 
 ##  Current Controls
-- SSH Root Login Disabled
-- Firewall Disabled
+- SSH Root Login 
+- Firewall Status
+- SSH Password Authentication
 ## Usage
 Run the auditor:
-
+- ./cisaudit
 
 ## Project Structure
 
 ````plaintext
 checks/
+-ssh_root_login.sh
+-firewall_enabled.sh
+-password_auth.sh
 reports/
 cisaudit.sh
 README.md
@@ -36,7 +41,6 @@ README.md
 -HTML Reports
 
 ##  Futre additions to SSH Security
--Password auth disabled
 -Max Auth attempts
 -Idle timeout
 -Protocol version
