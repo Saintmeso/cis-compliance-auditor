@@ -35,13 +35,13 @@ README.md
 -Compliance reporting
 -HTML Reports
 
-##  Futre additions to SSH Security
+## Future additions to SSH Security
 -Password auth disabled
 -Max Auth attempts
 -Idle timeout
 -Protocol version
 
-##Futre aditions to Firewall Checks
+## Future aditions to Firewall Checks
 -Default deny incoming
 -only necessary ports open
 -SSH allowed explicitly
