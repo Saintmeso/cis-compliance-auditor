@@ -4,6 +4,6 @@ echo "=================================="
 echo " CIS Compliance Auditor "
 echo "=================================="
 
-./checks/ssh_root_login.sh
+./checks/ssh_hardening.sh
 ./checks/firewall_enabled.sh
 ./checks/password_auth.sh
