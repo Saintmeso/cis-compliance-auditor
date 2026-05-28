@@ -40,12 +40,20 @@ Run the auditor:
 
 ````plaintext
 checks/
--ssh_root_login.sh
--firewall_enabled.sh
--password_auth.sh
+|--ssh_root_login.sh
+|--firewall_enabled.sh
+|--password_auth.sh
 reports/
 cisaudit.sh
 README.md
+```
+
+## Example Output
+
+```plaintext
+[PASS] SSH Root Login Disabled
+[FAIL] Firewall Service Inactive
+[PASS] SSH Password Authentication Disabled
 ```
 
 ## Future additions
@@ -64,3 +72,4 @@ README.md
 -Default deny incoming
 -only necessary ports open
 -SSH allowed explicitly
+
