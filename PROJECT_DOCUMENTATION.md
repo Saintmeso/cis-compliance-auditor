@@ -72,7 +72,9 @@ Reasoning:
 
 - PASS_MAX_DAYS helps enforce password expiration policies by limiting how long a password can remain active before requiring a reset. The main reason I implemented this is to be able to have insight in the potential risk of long-term credential exposure and help mitigate the impact of compromised passwords remaining active for long periods of time.
 - PASS_MIN_DAYS helps prevent rapid password cycling by enforcing a minimum number of days that must pass before a user can change their password again. Without this control documented, users may repeatedly change passwords in a short period of time in order to bypass password history requirements.
+
 Challenges Encountered:
+
 -One huge challenge I faced was that unlike simple PASS/FAIL string matching, the password policy rmodule required extracting numeric values from /etc/login.defs. and the thing that made it difficult for me was isolating only the numeric value for comparison which required me to learn grep, awk and command substitution.
 
 ## Bash Techniques Learned
