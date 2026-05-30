@@ -4,13 +4,13 @@ I built this CIS Compliance Auditor to gain hands-on experience with technical G
 The goal of this auditor is to validate Linux system configurations against CIS style security recommendations using automated PASS/FAIL compliance checks. While creating this project, I focused mainly on understanding the reasoning behind each control rather than just writing the bash scripts for them.
 
 This Project also helped me learn and understand:
--Bash scripting and Linux command-line workflows
--Configuration parsing using grep and awk
--Git version control and Github synchronization
--Modular scripting architecture
--SSH Hardening concepts
--Password Policy auditing
--Firewall Compliance validation
+- Bash scripting and Linux command-line workflows
+- Configuration parsing using grep and awk
+- Git version control and Github synchronization
+- Modular scripting architecture
+- SSH Hardening concepts
+- Password Policy auditing
+- Firewall Compliance validation
 
 ## Current Architecture
 
