@@ -66,7 +66,7 @@ Challenges:
 ## Password Policy Module
 Controls Implemented:
 - PASS_MAX_DAYS
-- PASS_MIN_DAYS (planned)
+- PASS_MIN_DAYS
 
 Reasoning:
 
