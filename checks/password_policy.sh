@@ -13,6 +13,10 @@ else
 fi 
 
 
+echo ""
+echo "[CHECK] Password Min Days"
+
+
 password_min_days=$(grep  "^[[:space:]]*PASS_MIN_DAYS " /etc/login.defs | awk '{print $2}')
 if [ -z "$password_min_days" ]; then
 	echo "[FAIL] PASS_MIN_DAYS is not configured."
