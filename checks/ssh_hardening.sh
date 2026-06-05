@@ -33,3 +33,14 @@ elif [ "$grace_time"  -le 60 ]; then
 else
 	echo "[FAIL] LoginGraceTime exceeds recommended threshold"
 fi
+
+echo ""
+echo "[CHECK] Permit Empty Passwords"
+
+if grep -q "^PermitEmptyPasswords no" /etc/ssh/sshd_config; then
+	echo "[PASS] Permit Empty Passwords OFF"
+else
+	echo "[FAIL] Permit Empty Passwords ON"
+fi
+
+
