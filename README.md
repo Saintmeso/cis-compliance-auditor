@@ -12,15 +12,18 @@ I built this project to better understand
 - Compliance automation
 - Security auditing workflows
 - Technical GRC operations
+- Bash scripting
+- Git and GitHub workflows
+- Security control validation
 
 ##  Current Features
-- SSH root login auditing
-- PASS/FAIL compliance reporting
-- Modular audit  architecture
+- SSH hardening auditing
+- Password policy auditing
 - Firewall status validation
-- SSH Password Authentication checks
+- SSH Password Authentication auditing
+- PASS/FAIL compliance reporting
+- Modular audit architecture
 - Bash-based control validation
-
 
 
 ##  Current Controls
@@ -30,7 +33,11 @@ I built this project to better understand
 |SSH Root Login| Validates whether direct root SSH access is disabled|
 |Firewall Status| Checks if firewall services are enabled|
 |SSH Password Authentication| Checks if SSH Password Authentication is enabled|
-
+|PASS_MAX_DAYS| Validates password expiration policies|
+|PASS_MIN_DAYS| Validates minimum password age policies
+|Firewall Status| Checks if firewall services are enabled|
+|PermitEmptyPasswords| Validates that empty SSH passwords are disabled|
+|LoginGraceTime| Validates SSH login timeout configuration|
 
 ## Usage
 Run the auditor:
@@ -54,19 +61,14 @@ README.md
 [PASS] SSH Root Login Disabled
 [FAIL] Firewall Service Inactive
 [PASS] SSH Password Authentication Disabled
+[PASS] LoginGraceTime configured securely
+[PASS] Empty passwords disabled
 ```
 
 ## Future additions
--Password Policy auditing
 -Auditd Validation
 -JSON reporting
--Compliance reporting
--HTML Reports
-
-## Future additions to SSH Security
--Max Auth attempts
--Idle timeout
--Protocol version
+-HTML Reporting
 
 ## Future aditions to Firewall Checks
 -Default deny incoming
