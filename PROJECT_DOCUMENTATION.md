@@ -32,14 +32,14 @@ For example:
 - Firewall modules validate whether firewall protections are enabled.
 - Password policy modules validate password aging configurations and authentication policies.
 
-ADD SUCCESSFUL AUDIT RUN PIC HERE
-
 With this current structure allows new compliance checks and security controls to be added easily withouth overcrowding the main audit runner. As this project evolves, additional modules and controls will continue to be added into the framework.
 
 ## SSH Hardening Module
 Controls Implemented:
 - PermitRootLogin
 - MaxAuthTries
+- LoginGraceTime
+- PermitEmptyPasswords
 
 Reasoning:
 
@@ -87,6 +87,9 @@ Challenges Encountered:
 - executable permissions (chmod +x)
 - conditional logic (if/elif/else)
 - modular scripting architecture
+- configuration parsing and validation
+- Threshold-based compliance validation
+- Empty variable validation using -z
 
 ## Future Improvements
 - PASS_MIN_DAYS validation
@@ -98,3 +101,7 @@ Challenges Encountered:
 - Logging/auditd validation
 - Port auditing
 - Service Auditing
+- X11Forwarding auditing
+- Allow TcpForwarding auditing
+- ClientAliveInterval auditing
+- ClientAliveCountMax auditing
